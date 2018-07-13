@@ -2,18 +2,7 @@ from flask import Flask , render_template
  
 app = Flask(__name__)
  
-@app.route('/')
-def index():
-    return 'Hello world'
-    
-@app.route('/h')
-def in_html():
-    return '<html><head><body><h1 style="text-align:center;">ClassBook2018</h1><div class="profile"><hr>Students Profile</hr></div><div class="student_info"></div></body></head></html>'
-    
-@app.route('/whereami')
-def whereami():
-    return 'Koforidua!'
-    
+
    
 @app.route('/homepage')
 def homepage():
